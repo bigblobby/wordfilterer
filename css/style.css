@@ -1,6 +1,6 @@
 
 :root{
-  --color: #4f84d9;
+  --color: #e26205;
   --shadow: 0 0 3px 1px #d8d8d8;
 }
 
@@ -18,7 +18,7 @@ body {
 }
 
 #inputArea {
-  box-shadow: var(--shadow);
+/*  box-shadow: var(--shadow);*/
 }
 
 #inner-box {
@@ -54,7 +54,7 @@ body {
 }
 
 #button:hover {
-  background-color: #3466b7;
+  background-color: #e68239;
   cursor: pointer;
 }
 
@@ -74,12 +74,13 @@ body {
 }
 
 #posted li {
-  border: 2px solid var(--color);
+/*  border: 2px solid var(--color);*/
+  border: 2px solid #a8a8a8;
   margin-bottom: 20px;
   padding: 0.5em;
   min-height: 75px;
   position: relative;
-  box-shadow: var(--shadow);
+/*  box-shadow: var(--shadow);*/
 }
 
 #posted li span:first-child {

@@ -1,5 +1,3 @@
-
-
 const innerBox = document.getElementById('inner-box');
 const form = document.getElementById('inputArea');
 const textBox = document.getElementById('textBox');
@@ -15,7 +13,7 @@ form.addEventListener('submit', (e) => {
   textBox.value = '';
   for(let word of arr) {
     if(text.toLowerCase().includes(word)) {
-      return alert('Post blocked for inapropriate use of words'); 
+      return alert('Post blocked'); 
     }
   } 
   //if(text !== '') {
@@ -37,7 +35,7 @@ function createLI(text) {
     return element;
   }
 
-  function appendLI(elementName, prop, value, classValue) {
+  function appendEl(elementName, prop, value, classValue) {
     const element = createElement(elementName, prop, value, classValue);
     li.append(element);
   }
@@ -49,10 +47,10 @@ function createLI(text) {
   }
   
   const li = document.createElement('li');
-  appendLI('span', 'textContent', text);
-  appendLI('button', 'textContent', 'X', 'deleteButton');
-  appendLI('button', 'textContent', '...', 'editButton');
-  appendLI('span', 'textContent', getTime(), 'timeStamp');
+  appendEl('span', 'textContent', text);
+  appendEl('button', 'textContent', 'X', 'deleteButton');
+  appendEl('button', 'textContent', '...', 'editButton');
+  appendEl('span', 'textContent', getTime(), 'timeStamp');
   return li;
 }
 
